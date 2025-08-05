@@ -1,0 +1,5 @@
+{"type": "SCHEMA", "stream": "customers", "schema": {"type": "object", "properties": {"id": {"type": "string"}, "externalId": {"type": "string"}, "name": {"type": "string"}, "email": {"type": "string"}, "phone": {"type": "string"}}}, "key_properties": ["externalId"]}
+{"type": "RECORD", "stream": "customers", "record": {"externalId": "TEST-EXT-CUST-1111", "name": "John Doe", "email": "john@example.com", "phone": "+1234567890"}}
+{"type": "RECORD", "stream": "customers", "record": {"externalId": "TEST-EXT-CUST-2222", "name": "Jane Smith", "email": "jane@example.com", "phone": "+0987654321"}}
+{"type": "RECORD", "stream": "customers", "record": {"id": "15142", "externalId": "TEST-EXT-CUST-3333", "name": "Bob Wilson", "email": "bob@example.com", "phone": "+1122334455"}}
+{"type": "STATE", "value": {}} 
