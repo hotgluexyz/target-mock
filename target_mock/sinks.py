@@ -182,8 +182,10 @@ class CustomerSink(MockSink):
         if not context.get("records"):
             context["records"] = []
 
+        optional_external_id = self.config.get("optional_external_id") == True
+
         # Validate required fields
-        if not record.get("externalId"):
+        if not record.get("externalId") and not optional_external_id:
             state = {
                 "success": False,
                 "error": "externalId is required",
