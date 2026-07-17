@@ -3,9 +3,9 @@
 import json
 import hashlib
 from datetime import datetime
-from singer_sdk.plugin_base import PluginBase
-from target_hotglue.client import HotglueBatchSink
-from target_hotglue.common import HGJSONEncoder
+from hotglue_singer_sdk.plugin_base import PluginBase
+from hotglue_singer_sdk.target_sdk.client import HotglueBatchSink
+from hotglue_singer_sdk.target_sdk.common import HGJSONEncoder
 from typing import Dict, List, Optional
 
 
